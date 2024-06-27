@@ -1,0 +1,2 @@
+need to use flex img for locate contact and about
+need instance for flex-basis and flex-shrink

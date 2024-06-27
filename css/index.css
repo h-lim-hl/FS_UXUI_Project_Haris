@@ -1,5 +1,13 @@
-body {
+html { /* to offset for fixed scrollspy nav */
+    scroll-padding-top: 4rem;
+}
+
+.index-body {
     background-color:  #f9f9f9;
+}
+
+.menu-body {
+    background-color: beige;
 }
 
 .roboto-condensed {
@@ -75,7 +83,7 @@ body {
 
 .white-overlay {
     background-color: White;
-    opacity: 94%;
+    opacity: 93%;
 }
 
 .menu-tab {
@@ -103,14 +111,14 @@ body {
     color:black;
 }
 
-/* @include media-breakpoint-up(sm) {
+@include media-breakpoint-up(sm) {
      body {
-        padding-top: 70px;
+        background-color:red;
      } 
 }
 
 @include media-breakpoint-up(md) {
     body {
-       padding-top: 40px;
+       background-color:blue;
     } 
-} */
+}
