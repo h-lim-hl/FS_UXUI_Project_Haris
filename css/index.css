@@ -1,3 +1,7 @@
+:root  {
+    --f-bandsize-px: 420px;
+}
+
 html { /* to offset for fixed scrollspy nav */
     scroll-padding-top: 4rem;
 }
@@ -35,7 +39,14 @@ html { /* to offset for fixed scrollspy nav */
 
 .bgc-band {
     background-color: rgba(245, 237, 231, 0.2);
-    min-height: 400px;
+    /* min-height: 500px; */
+    min-height: var(--f-bandsize-px);
+}
+
+.bgc-band-b {
+    background-color: rgba(245, 237, 231, 0.2);
+    /* min-height: 500px; */
+    min-height: var(--f-bandsize-px);
 }
 
 .bg-blue {
@@ -60,11 +71,13 @@ html { /* to offset for fixed scrollspy nav */
     border: 1px solid rgb(120, 120, 120);
 }
 .cafe-img { 
-    background-image: url(/images/cafe-hero-image.jpg);
+    background-image: url(../images/cafe-hero-image.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-color: beige;
-    min-height: 500px;
+    /* min-height: 500px; */
+    min-height: var(--f-bandsize-px);
+	border-radius: 5px;
 }
 
 .rounded-card {
@@ -72,7 +85,7 @@ html { /* to offset for fixed scrollspy nav */
 }
 
 .card-content {
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .center-aligned {
@@ -109,16 +122,4 @@ html { /* to offset for fixed scrollspy nav */
 
 .menu-tab-hlink:hover {
     color:black;
-}
-
-@include media-breakpoint-up(sm) {
-     body {
-        background-color:red;
-     } 
-}
-
-@include media-breakpoint-up(md) {
-    body {
-       background-color:blue;
-    } 
 }
