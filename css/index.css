@@ -1,5 +1,13 @@
 :root  {
     --f-bandsize-px: 420px;
+
+    --main-color: #8f4d21;
+    --highlight-color: #f0c57a;
+    --sec-color-1: beige;
+    --sec-color-2: blanchedalmond;
+    --back-color: #f9f9f9;
+
+    --icon-sq-len: 50px;
 }
 
 html { /* to offset for fixed scrollspy nav */
@@ -7,11 +15,12 @@ html { /* to offset for fixed scrollspy nav */
 }
 
 .index-body {
-    background-color:  #f9f9f9;
+    background-color:  var(--back-color);
 }
 
 .menu-body {
-    background-color: beige;
+    /* background-color: var(--sec-color-2); */
+    background-color: floralwhite;
 }
 
 .roboto-condensed {
@@ -19,6 +28,7 @@ html { /* to offset for fixed scrollspy nav */
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
+  font-optical-sizing: auto;
 }
 
 .playwrite-mx {
@@ -26,11 +36,14 @@ html { /* to offset for fixed scrollspy nav */
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
+  font-optical-sizing: auto;
 }
 
 .icon-size {
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+    /* height: 50px; */
+    height: var(--icon-sq-len);
+    width: var(--icon-sq-len);
 }
 
 .margin-for-navbar {
@@ -38,27 +51,18 @@ html { /* to offset for fixed scrollspy nav */
 }
 
 .bgc-band {
-    background-color: rgba(245, 237, 231, 0.2);
+    /* background-color: rgba(245, 237, 231, 0.2); */
     /* min-height: 500px; */
+    background-color: var(--sec-color-1);
     min-height: var(--f-bandsize-px);
 }
 
 .bgc-band-b {
-    background-color: rgba(245, 237, 231, 0.2);
+    /* background-color: rgba(245, 237, 231, 0.2); */
     /* min-height: 500px; */
+    background-color: var(--sec-color-2);
     min-height: var(--f-bandsize-px);
 }
-
-.bg-blue {
-    background-color: blue;
-
-}
-
-.bg-green {
-    background-color: green;
-
-}
-
 .boxshadow-style {
     box-shadow: 3px 3px 5px 5px rgba(10, 10, 10, 0.6);
 }
@@ -67,15 +71,11 @@ html { /* to offset for fixed scrollspy nav */
     box-shadow: 2px 2px 5px 5px rgba(10, 10, 10, 0.4);
 }
 
-.borderstyle {
-    border: 1px solid rgb(120, 120, 120);
-}
 .cafe-img { 
     background-image: url(../images/cafe-hero-image.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-color: beige;
-    /* min-height: 500px; */
     min-height: var(--f-bandsize-px);
 	border-radius: 5px;
 }
@@ -85,7 +85,7 @@ html { /* to offset for fixed scrollspy nav */
 }
 
 .card-content {
-    min-height: 500px;
+    min-height: var(--f-bandsize-px);
 }
 
 .center-aligned {
@@ -106,14 +106,16 @@ html { /* to offset for fixed scrollspy nav */
     border-radius: 10px 10px 0px 0px;
 
     flex-grow: 1;
-    background-color: #8f4d21;
+    background-color: var(--main-color);
 
     transition: flex-grow 0.7s;
+
+    border: 1px solid var(--highlight-color)
 }
 
 .menu-tab:hover {
     flex-grow: 3;
-    background-color: #f0c57a;
+    background-color: var(--highlight-color);
 }
 
 .menu-tab-hlink {
