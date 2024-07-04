@@ -7,7 +7,8 @@
     --sec-color-2: blanchedalmond;
     --back-color: #f9f9f9;
 
-    --icon-sq-len: 50px;
+    --icon-sq: 50px;
+    --icon-sq-sm: 25px;
 }
 
 html { /* to offset for fixed scrollspy nav */
@@ -42,8 +43,13 @@ html { /* to offset for fixed scrollspy nav */
 .icon-size {
     /* width: 50px; */
     /* height: 50px; */
-    height: var(--icon-sq-len);
-    width: var(--icon-sq-len);
+    height: var(--icon-sq);
+    width: var(--icon-sq);
+}
+
+.micro-icon-size {
+    height: var(--icon-sq-sm);
+    width: var(--icon-sq-sm);
 }
 
 .margin-for-navbar {
@@ -71,13 +77,26 @@ html { /* to offset for fixed scrollspy nav */
     box-shadow: 2px 2px 5px 5px rgba(10, 10, 10, 0.4);
 }
 
-.cafe-img { 
+.greyborder-style {
+    border: 1px solid grey;
+}
+
+.hero-bg-img { 
     background-image: url(../images/cafe-hero-image.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-color: beige;
     min-height: var(--f-bandsize-px);
-	border-radius: 5px;
+	border-radius: 15px;
+}
+
+.menu-bg-img { 
+    background-image: url(../images/dish-croped.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: beige;
+    min-height: var(--f-bandsize-px);
+	border-radius: 15px;
 }
 
 .rounded-card {
