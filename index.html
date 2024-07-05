@@ -49,7 +49,7 @@
         tabindex="0">
         <!-- Hero -->
         <section id="home" class="container-xl hero-bg-img pt-1 pb-3">
-            <div class="col-sm-12 col-lg-6 mt-5 white-overlay rounded-card boxshadow-style">
+            <div class="col-12 col-md-6 mt-5 white-overlay rounded-card boxshadow-style">
                 <div class="align-content-center card-content p-4">
                     <h2 class="playwrite-mx"><b><u> Welcome to A Little Cafe! </u></b></h2>
                     <h4 class="roboto-condensed"> Indulge in Our Irresistible Lunch Specials </h4>
@@ -62,9 +62,7 @@
                     <p class="roboto-condensed"> Whether you're craving a quick bite or a leisurely lunch, Cafe Paradiso
                         is your go-to spot! Enjoy a relaxing ambiance and exceptional service while savoring our
                         delectable dishes. </p>
-                    <p class="roboto-condensed"> Reserve your table today! <a href="#contact"><button type="button"
-                                class="btn btn-primary ms-2"> Book Now!
-                            </button></a> </p>
+                    <p class="roboto-condensed"> Reserve your table today! <a id="hero-link" href="#contact"> Book Now! </a> </p>
                 </div>
             </div>
         </section>
@@ -88,8 +86,13 @@
                                 href="drinks.html"> Drinks </a> </div>
                     </div>
                 </div>
-                <div class="offset-1 col-10 col-md-8 offset-md-2 pt-1 menu-body">
-                    <iframe name="menu-iframe" src="starters.html" height=500px width="100%"></iframe>
+                <div class="offset-1 col-10 col-md-8 offset-md-2 menu-body embed-responsive embed-responsive-4by3">
+                    <!-- /* https://validator.w3.org/nu is old */ -->
+                    <iframe class="d-block d-sm-none" name="menu-iframe" height=500 width=250 src="starters.html"></iframe>
+                    <iframe class="d-none d-sm-block d-md-none" name="menu-iframe" height=500 width=400 src="starters.html"></iframe>
+                    <iframe class="d-none d-md-block d-lg-none" name="menu-iframe" height=500 width=450 src="starters.html"></iframe>
+                    <iframe class="d-none d-lg-block d-xl-none" name="menu-iframe" height=500 width=600 src="starters.html"></iframe>
+                    <iframe class="d-none d-xl-block" name="menu-iframe" height=500 width=700 src="starters.html"></iframe>
                 </div>
             </div>
         </section>
@@ -98,7 +101,7 @@
             <div class="container my-1">
                 <div class="row bgc-band-b align-items-center rounded-card">
                     <div class="col-12 col-md-6 pt-1 pb-2 text-center">
-                        <img src="../images/cafe-front.jpg" class="img-fluid greyborder-style"
+                        <img src="images/cafe-front.jpg" class="img-fluid greyborder-style"
                             alt="A Little Cafe is located in Neverland">
                     </div>
                     <div class="col-12 col-md-6 align-content-center">
@@ -133,7 +136,7 @@
             <div class="container my-1">
                 <div class="row bgc-band align-items-center flex-column flex-md-row-reverse rounded-card">
                     <div class="col-12 col-md-6 pt-1 pb-2 text-center">
-                        <img src="../images/chef-work.jpg" class="img-fluid greyborder-style" alt="Happy Cafe">
+                        <img src="images/chef-work.jpg" class="img-fluid greyborder-style" alt="Happy Cafe">
                     </div>
                     <div class="col-12 col-md-6 align-content-center">
                         <h4 class="pt-4 playwrite-mx ms-md-4 mb3"><u> Our Philosophy </u></h4>
@@ -192,27 +195,30 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div id="cafe-gallery" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
+        <section id="gallery">
+            <div class="container mt-1 bgc-band rounded-card pb-4 mb-3 align-content-center">
+                <h4 class="playwrite-mx"><u> Our Gallery </u></h4>
+                <div id="cafe-gallery" class="carousel slide" style="background-color:grey;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/600x400/orange/white/png" class="d-block w-80 mx-auto" alt="picture 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/600x400/blue/white/png" class="d-block w-80 mx-auto" alt="picture 2">
+                        </div>
+                        <div class="carousel-item">
+                             <img src="https://placehold.co/600x400/green/white/png" class="d-block w-80 mx-auto" alt="picture 3">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                         <img src="..." class="d-block w-100" alt="...">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cafe-gallery" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cafe-gallery" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
     </div>
